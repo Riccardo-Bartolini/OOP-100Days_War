@@ -9,12 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Gianmarco-Fabbri/OOP23-100DaysWar/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Gianmarco-Fabbri/OOP23-100DaysWar?style=for-the-badge&color=blue" alt="License"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/Riccardo-Bartolini/OOP-100Days_War?style=for-the-badge&color=blue" alt="License"></a>
   <a href="https://www.java.com/"><img src="https://img.shields.io/badge/Java-17+-orange?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 17+"></a>
   <a href="https://gradle.org/"><img src="https://img.shields.io/badge/Gradle-Build-02303A?style=for-the-badge&logo=gradle&logoColor=white" alt="Gradle"></a>
-  <a href="https://github.com/Gianmarco-Fabbri/OOP23-100DaysWar/releases"><img src="https://img.shields.io/github/v/release/Gianmarco-Fabbri/OOP23-100DaysWar?style=for-the-badge&color=green" alt="Release"></a>
-  <a href="https://github.com/Gianmarco-Fabbri/OOP23-100DaysWar"><img src="https://img.shields.io/github/stars/Gianmarco-Fabbri/OOP23-100DaysWar?style=for-the-badge&color=yellow" alt="Stars"></a>
-  <a href="https://github.com/Gianmarco-Fabbri/OOP23-100DaysWar/issues"><img src="https://img.shields.io/github/issues/Gianmarco-Fabbri/OOP23-100DaysWar?style=for-the-badge" alt="Issues"></a>
 </p>
 
 ---
@@ -23,8 +20,12 @@
 
 **100 Days War** is a simplified, single-player strategy game where the player competes against an AI bot on a procedurally generated map. Each match spans **100 virtual days** — every day is simulated within a few seconds — and the goal is to conquer the opponent's spawn cell or control the most territory by the end of the war.
 
-> **University Project** — Developed as part of the *Object-Oriented Programming* course (A.Y. 2023/2024) at the [University of Bologna](https://www.unibo.it/).
-> **Bachelor Degree in [Computer Science and Engineering](https://corsi.unibo.it/laurea/IngegneriaScienzeInformatiche)**.
+> **University project** — Developed by a team of four for the *Object-Oriented Programming* course (A.Y. 2023/2024) in the [Bachelor's Degree in Computer Science and Engineering](https://corsi.unibo.it/laurea/IngegneriaScienzeInformatiche) at the [University of Bologna](https://www.unibo.it/).
+
+### Repository provenance
+
+**This repository is my personal copy of the [original team repository](https://github.com/Gianmarco-Fabbri/OOP23-100DaysWar), maintained by a fellow team member.** The game was a collaborative project, not an individual one. My contributions were the coin system and shop interface, game-map rendering, and tower interaction logic. The [Team & Contributions](#-team--contributions) section credits all four members.
+
 ---
 
 ## 🎮 How It Works
@@ -42,7 +43,7 @@
 
 ## 🏗️ Architecture
 
-The project follows the **Model-View-Controller (MVC)** architectural pattern, ensuring a clean separation of concerns across the codebase.
+The project follows the **Model-View-Controller (MVC)** architectural pattern, separating the interface, game controls and game state.
 
 ```mermaid
 graph TB
@@ -116,16 +117,13 @@ graph TB
 ### Prerequisites
 
 - **Java 17** or higher
-- **Gradle** (wrapper included)
+- No separate Gradle installation is needed; the repository includes the Gradle wrapper.
 
 ### Run from Source
 
 ```bash
-# Clone the repository
-git clone https://github.com/Gianmarco-Fabbri/OOP23-100DaysWar.git
-cd OOP23-100DaysWar
-
-# Build and run
+git clone https://github.com/Riccardo-Bartolini/OOP-100Days_War.git
+cd OOP-100Days_War
 ./gradlew run
 ```
 
@@ -160,47 +158,48 @@ This project was developed by a team of four as part of a university course.
 
 | Member | Responsibilities |
 |:-------|:-----------------|
-| **Bartolini** | 💰 Coin system & shop UI · 🗺️ Game map rendering · 🧩 Towers interaction logic  |
+| **Bartolini** | 💰 Coin system & shop UI · 🗺️ Game map rendering · 🧩 Tower interaction logic |
 | **Balzani** | 🖥️ Start menu UI · 🎲 Dice implementation · 💾 Save & load functionality · 🛡️ Tower system |
 | **Fabbri** | 🏃 Soldier system & interactions · 🤖 AI bot · 📊 Real-time statistics |
 | **Francalanci** | ⚔️ Combat system · 📅 Turn management · 📜 In-game manual · 🏆 End-game logic |
 
 ### 💰 Bartolini
+
 **Riccardo Bartolini** — [@Riccardo-Bartolini](https://github.com/Riccardo-Bartolini)
-- Implementation of the **coin system**, the related shop menu, and its display in the main game panel
-- Implementation and visualization of the **game map**
-- Implementation of the *towers interaction* logic
+
+- Implemented the **coin system**, related shop menu and its display in the main game panel.
+- Implemented and rendered the **game map**.
+- Implemented the **tower interaction** logic.
 
 ### 🖥️ Balzani
+
 **Riccardo Balzani** — [@FrittatinaDiBucatini09](https://github.com/FrittatinaDiBucatini09)
-- Implementation and visualization of **defensive towers**
-- Implementation and visualization of the **dice** system
-- Implementation and visualization of the **start menu** panel
-- Management of **game save and load** functionality
+
+- Implemented and rendered defensive towers, the dice system and the start menu.
+- Managed game save and load functionality.
 
 ### 🏃 Fabbri
-**Gianmarco Fabbri** — [@gimbo](https://github.com/Gianmarco-Fabbri)
 
-- Implementation and visualization of **soldiers** and their interactions
-- Implementation of the **AI bot** opponent
-- Implementation and visualization of **real-time game statistics**
+**Gianmarco Fabbri** — [@Gianmarco-Fabbri](https://github.com/Gianmarco-Fabbri)
+
+- Implemented and rendered soldiers and their interactions.
+- Implemented the AI bot opponent and real-time game statistics.
 
 ### ⚔️ Francalanci
-**Filippo Francalanci** — [@Filippo](https://github.com/FrancalanciFilippo)
 
-- Implementation and visualization of **soldier combat**
-- Implementation and visualization of **turn progression**
-- Implementation of the **in-game rules manual** (logic and UI)
-- Management of **end-of-game** conditions
+**Filippo Francalanci** — [@FrancalanciFilippo](https://github.com/FrancalanciFilippo)
+
+- Implemented soldier combat and turn progression.
+- Implemented the in-game rules manual and end-of-game conditions.
 
 ---
 
 ## 🏛️ Key Design Challenges
 
-- ✅ Strict adherence to the **MVC pattern** with clean dependency management
-- ✅ Effective **Git collaboration** workflow across four team members
-- ✅ Balanced **workload distribution** and parallel development
-- ✅ Fine-tuned **day-cycle speed** control for optimal gameplay pacing
+- Applying the **MVC pattern** across the game.
+- Coordinating development and Git work across four team members.
+- Dividing features into modules that could be developed in parallel.
+- Tuning the day-cycle speed for gameplay.
 
 ---
 
